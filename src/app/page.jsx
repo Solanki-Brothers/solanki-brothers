@@ -1,3 +1,9 @@
+import { HeroComponent } from "@/containers";
+
 export default function Home() {
-  return <h1>Hello Solanki Brothers</h1>;
+  return (
+    <main className="h-screen">
+      <HeroComponent />
+    </main>
+  );
 }
