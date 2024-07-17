@@ -1,9 +1,10 @@
-import { HeroComponent } from "@/containers";
+import { HeroComponent, FeaturedNewsArticles } from "@/containers";
 
 export default function Home() {
   return (
-    <main className="h-screen">
+    <main className="h-full">
       <HeroComponent />
+      <FeaturedNewsArticles />
     </main>
   );
 }

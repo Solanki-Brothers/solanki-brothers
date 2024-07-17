@@ -4,6 +4,59 @@
 
 /* Variables */
 :root {
-  --brand-primary: #00a399;
+  --brand-primary: #0b6f69;
   --brand-secondary: #4a5265;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+@layer utilities {
+  @keyframes customPulse {
+    50% {
+      opacity: 0.13;
+    }
+  }
+  .customPulse {
+    animation: customPulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .customShadow {
+    box-shadow: 0 0 160px 160px rgb(62 213 221);
+  }
+  .customShadowDark {
+    box-shadow: 0 0 400px 400px rgb(62 213 221);
+  }
+  .customDropShadow {
+    filter: drop-shadow(3px 3px 7px rgba(255, 255, 255, 1));
+  }
+
+  .sectionPadding {
+    @apply 2xl:px-32  xl:px-24  lg:px-16 px-10;
+  }
 }
