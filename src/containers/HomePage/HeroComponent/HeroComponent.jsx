@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { IoMdCheckmark } from "react-icons/io";
+import { SectionWrapper } from "@/components";
 
 function HeroComponent() {
   return (
-    <section className=" h-1/2 flex px-40">
+    <SectionWrapper>
       <article className="w-1/2 h-full border-r border-black py-20 flex flex-col items-start justify-between">
         <div className="h-1/2 flex flex-col gap-4">
           <h2 className="font-semibold text-5xl">
@@ -54,7 +55,7 @@ function HeroComponent() {
           </li>
         </ul>
       </article>
-    </section>
+    </SectionWrapper>
   );
 }
 
